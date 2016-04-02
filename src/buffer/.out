@@ -1,0 +1,12 @@
+void	free_buffer(char ** buffer, t_dim s)
+{
+  int	x;
+
+  x = 0;
+  while (x < s.height)
+    {
+      free(buffer[x]);
+      x++;
+    }
+  free(buffer);
+}
